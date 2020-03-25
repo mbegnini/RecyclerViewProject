@@ -1,10 +1,16 @@
 package br.com.recyclerviewproject;
 
-public class Filme {
+import java.io.Serializable;
+
+public class Filme implements Serializable {
     private int imagemCapa;
     private String titulo;
     private String genero;
     private int ano;
+
+    public Filme(){
+
+    }
 
     public Filme(int imagemCapa, String titulo, String genero, int ano) {
         this.imagemCapa = imagemCapa;
