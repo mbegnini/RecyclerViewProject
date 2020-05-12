@@ -6,4 +6,14 @@
         android:title="Inserir"
         app:showAsAction="always"
         android:icon="@drawable/ic_add_black_24dp" />
+
+    <item android:id="@+id/carregarMenu"
+        android:title="Carregar"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_storage_black_24dp" />
+
+    <item android:id="@+id/deletarMenu"
+        android:title="Deletar"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_clear_all_black_24dp" />
 </menu>

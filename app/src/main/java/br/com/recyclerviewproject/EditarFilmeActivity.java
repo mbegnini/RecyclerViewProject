@@ -34,7 +34,7 @@ public class EditarFilmeActivity extends AppCompatActivity {
         requestCode = bundle.getInt("request_code");
 
         if (requestCode==MainActivity.REQUEST_EDITAR_FILME){
-            filme = (Filme) bundle.getSerializable("filme");
+            filme = (Filme) bundle.getParcelable("filme");
             position = bundle.getInt("position");
 
             capaImageView.setImageResource(filme.getImagemCapa());
@@ -57,7 +57,7 @@ public class EditarFilmeActivity extends AppCompatActivity {
         filme.setGenero(generoEditText.getText().toString());
         filme.setAno(Integer.valueOf(anoEditText.getText().toString()));
 
-        bundle.putSerializable("filme", filme);
+        bundle.putParcelable("filme", filme);
 
         Intent returnIntent = new Intent();
         returnIntent.putExtras(bundle);
